@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/digitime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          
+          android:textSize="30sp" />
+
+      <TextView
+          android:id="@+id/counttime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_alignParentBottom="true"
+          
+          
+          android:textSize="30sp" />
+      
+
+
+    <com.example.ntpclock.util.CustomAnalogClock
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/clock"
+        style="@style/clock"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" 
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/counttime"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="@string/countdown" />
+    
+</RelativeLayout>
+
